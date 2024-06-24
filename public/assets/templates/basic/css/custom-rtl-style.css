@@ -1,0 +1,178 @@
+@font-face {
+    font-family: TheSansArabic-Bold;
+    src: url('../../../font/TheSansArabic-Bold.ttf');
+}
+
+@font-face {
+    font-family: FFShamel-SansOneBold;
+    src: url('../../../font/FFShamelFamily-SansOneBold.ttf');
+}
+
+@font-face {
+    font-family: FFShamel-SansOneBook;
+    src: url('../../../font/FFShamelFamily-SansOneBook.ttf');
+}
+
+:root {
+    --heading-font: FFShamel-SansOneBold;
+    --body-font: var(--heading-font);
+}
+
+body, .btn {
+    font-family: var(--body-font), sans-serif;
+}
+
+.FFShamel-SansOneBook {
+    font-family: FFShamel-SansOneBook;
+}
+
+.FFShamel-SansOneBold {
+    font-family: FFShamel-SansOneBold;
+}
+
+/* Start header */
+.primary-menu__sub.for-rtl::after {
+    right: auto;
+    left: 15px;
+}
+
+@media screen and (min-width: 992px) {
+    .primary-menu__sub {
+        right: auto;
+        left: 0;
+    }
+    .primary-menu__sub::after {
+        left: 15px;
+        right: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .select-lang {padding-right: 22px;}
+    .select-lang--light::before {right: 4px;}
+}
+.user-dropdown--sm .primary-menu__sub::after {right: auto;}
+/* End header */
+
+/* Start hero */
+.search-bar__icon {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.search-bar__icon_home {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.search-bar .form--control {
+    color: black
+}
+.search-bar .form--control_home {
+    color: white;
+}
+
+
+/* End hero */
+
+.primary-menu>li.has-sub .primary-menu__link::after {
+    right: auto;
+    left: -6px;
+}
+
+.nav-item a, .select-lang .form-select {
+    font-family: TheSansArabic-Bold !important;
+}
+
+.TheSansArabic-bold {
+    font-family: TheSansArabic-Bold;
+}
+.Shamel-SansOneBold-font {
+    font-family: FFShamel-SansOneBold;
+}
+
+.Shamel-SansOneBook-font {
+    font-family: FFShamel-SansOneBook;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+/* Start images list */
+.gallery__premium {
+    right: 15px
+}
+
+.gallery__author {
+    font-size: 14px;
+}
+
+/* End images list */
+
+/* Start about section */
+/* .about-card__text {} */
+/* End about section */
+
+/* Start plans page */
+.list--check>li::before {margin-right: 0; margin-left: 10px;}
+.modal-header .btn-close {margin-right: auto; margin-left: 0;}
+.custom--modal .modal-title {font-size: 15px;}
+.purchaseModal .details {font-size: 15px;}
+/* End plans page */
+
+/* Start payment page */
+.form--select::before {left: 1px; right: auto;}
+.form--select .form-select {padding-left: 46px; padding-right: .75rem;}
+/* End payment page */
+
+/* Start privacy and policy page */
+.agreement-text {font-family: FFShamel-SansOneBook;}
+/* End privacy and policy page */
+
+/* Start verification code page */
+.verification-code {direction: ltr;}
+.verification-code input { padding-left: 22px; letter-spacing: 47px; }
+/* End verification code page */
+
+/* Start user dashboard */
+.dashboard-widget__content {padding-right: 15px; padding-left: 0;}
+.dashboard-widget__overlay-icon {left: 15px; right: auto;}
+.accordion-button::after {margin-left: 0; margin-right: auto;}
+.custom--table tbody td:last-child {text-align: left;}
+.custom--table tbody td:first-child {text-align: right;}
+.custom--table thead th:first-child {text-align: right;}
+.dashboard-menu__head-text {padding-right: 15px; padding-left: 0;}
+.dashboard-menu__head-close {
+    border-right: 1px solid hsl(var(--light)/0.3);
+    border-left: none;
+}
+/* End user dashboard */
+
+/* Start custom framework */
+.base-btn::after {content: "\f060";}
+.base-btn:hover::after {margin-right: 15px; margin-left: 0;}
+.sm-text {font-size: 13px;}
+#payment-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: TheSansArabic-Bold;
+    font-size: 14px !important;
+  }
+#payment-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: TheSansArabic-Bold;
+    font-size: 14px !important;
+}
+#payment-form  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: TheSansArabic-Bold;
+    font-size: 14px !important;
+}
+.form--control {font-size: 14px;}
+.form--select .form-select {font-size: 0.775rem;}
+form input, .search-bar .form--control {
+    font-family: FFShamel-SansOneBook, sans-serif;
+}
+.search-bar .form--control {font-weight: bold;}
+/* End custom framework */

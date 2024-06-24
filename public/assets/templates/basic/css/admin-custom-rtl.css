@@ -1,0 +1,132 @@
+
+@font-face {
+    font-family: TheSansArabic-Bold;
+    src: url('../../../font/TheSansArabic-Bold.ttf');
+}
+
+@font-face {
+    font-family: FFShamel-SansOneBold;
+    src: url('../../../font/FFShamelFamily-SansOneBold.ttf');
+}
+
+@font-face {
+    font-family: FFShamel-SansOneBook;
+    src: url('../../../font/FFShamelFamily-SansOneBook.ttf');
+}
+
+:root {
+    --heading-font: FFShamel-SansOneBold;
+    --body-font: var(--heading-font);
+}
+
+body {
+    font-family: FFShamel-SansOneBook, sans-serif;
+}
+/* body * {padding-top: 5px;} */
+.FFShamel-SansOneBook {
+    font-family: FFShamel-SansOneBook, sans-serif;
+}
+
+.FFShamel-SansOneBold {
+    font-family: FFShamel-SansOneBold;
+}
+
+input.form-control, select.form-control, .btn {
+    font-family: FFShamel-SansOneBook, sans-serif;
+}
+
+/* Admin dashboard rtl style */
+.body-wrapper {margin-left: 0; margin-right: 250px;}
+
+/* Start navbar */
+.navbar-wrapper {margin-left: 0; margin-right: 250px;}
+.navbar__right {margin-left: 0; margin-right: auto;}
+.navbar-user__info {padding-left: 0; padding-right: 10px;}
+.navbar-user .icon {padding-left: 0; padding-right: 10px;}
+.navbar-search i {right:15px; left: auto;}
+.navbar-search .navbar-search-field {padding-left: 20px; padding-right: 40px;}
+/* End navbar */
+/* Start side bar */
+.sidebar {left: auto;right: 0;}
+.dropdown-menu__item .dropdown-menu__icon~.dropdown-menu__caption {padding-left: 0; padding-right: 8px;}
+.sidebar__menu .menu-icon {margin-right:0; margin-left: 15px;}
+.sidebar__menu .sidebar-dropdown>a::before { right: auto; left: 20px; }
+.sidebar__menu-header {margin:25px 25px 8px 0px}
+.sidebar__menu .sidebar-submenu .sidebar-menu-item a {padding: 10px 35px 10px 10px}
+.sidebar__menu .sidebar-dropdown>a {padding-right: 25px;}
+
+/* End side bar */
+/* Start content */
+table thead th:first-child {border-radius: 0px 5px 0 0;}
+table thead th:last-child {border-radius: 5px 0px 0 0;}
+.dropdown-menu {text-align: right !important;}
+table td:first-child, table th:first-child{text-align: right;}
+table th:last-child {}
+.btn i {margin-right: 0; margin-left: 5px}
+@media (max-width: 991px) {
+    .sidebar {
+        right: -285px;
+        left: auto;
+    }
+    .sidebar.open {right: 0;}
+    .sidebar .res-sidebar-close-btn {right: auto; left: -35px;}
+    .navbar-wrapper, .body-wrapper {
+        margin-right: 0;
+    }
+}
+
+table th:last-child, table td:last-child {text-align: left;}
+.sp-replacer {border-radius: 0px 5px 5px 0px;}
+.sp-preview{margin-right: 0; margin-left: 5px;}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.widget-two__content {padding-left:0; padding-right: 20px;}
+.widget-two__btn {left: 5px; right: auto;}
+
+.still-ltr {direction: ltr;}
+.still-ltr .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.still-ltr .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.still-ltr label {width: 100%; text-align: right;}
+.file-upload-wrapper:before {
+    left: 0;
+    right: auto;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.datepicker--nav-action {transform: rotate(180deg);}
+.table .user .name {padding-left: 0; padding-right: 10px;}
+.login-form .form-check .form-check-label::before {right: 0; left: auto;}
+.login-form .form-check .form-check-label {padding-left: 0; padding-right: 25px;}
+.widget-two .overlay-icon {right: auto; left: -15px;}
+.widget-two.style--two::before, .widget-two.style--two::after {
+    left: 0;
+    right: auto;
+    transform: rotateY(180deg);
+}
+.scalabel-img-box .scale-hover {transition: .3s;}
+/* End content */
+
+
+
